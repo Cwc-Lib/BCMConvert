@@ -1,0 +1,18 @@
+-{vFlag}=""
+>
+-{vIncl}=
+-I include/
+>
+-{pObj}= "obj/{_sPlatform}_{_sOpt}/"
+-{pOut}="_out/{_sPlatform}_{_sOpt}/"
+>
+;Build
+-c ../src/ -o {pObj}
+-{vIncl}
+-{vFlag}
+>
+;Generate executable
+-o {pObj} -#To {pOut}BCMconvert.exe 
+;-lc -lc -lpad -lkernel
+>
+;g++ main.cpp load.cpp bcm.cpp -lassimp -o Bin/BCMconvert

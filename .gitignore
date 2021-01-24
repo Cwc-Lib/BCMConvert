@@ -1,2 +1,5 @@
 Bin/*
 *.swp
+*.wdat
+obj/
+_out/
