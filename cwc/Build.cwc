@@ -15,6 +15,7 @@
 -o {pObj} -#To {pOut}BCMconvert.exe 
 -L Lib/
 -lassimp-dll
+;-Wl,-allow-multiple-definition
 >
 -#Copy Lib/assimp.dll {pOut}
 >
